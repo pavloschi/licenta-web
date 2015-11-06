@@ -1,0 +1,6 @@
+<div class="row" id='vehicleList' ng-init='getVehicleList()'>
+	<div class="col-sm-6 vehicle" ng-repeat='car in cars' ng-click='selectVehicle(car)'>
+		# {{car.id}} - {{car.plate}} <br>
+		{{car.driver}}
+	</div>
+</div>

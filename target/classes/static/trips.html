@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<style>
+		html, body, #map-canvas {
+			width: 800px;
+			height: 400px;
+			margin: 10px;
+			padding: 15px
+		}
+	</style>
+
+	<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<script type="text/javascript"
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJgquPs9v-nqIOm6M1cAOyIqR9aa5gnb4"></script>
+
+
+<script type="text/javascript">
+	var map;
+	function initialize() {
+		var mapOptions = {
+			center : {
+				lat : 44.435466,
+				lng :  26.102558
+			},
+			zoom : 16
+		};
+		map = new google.maps.Map(document.getElementById('map-canvas'),
+			mapOptions);
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<script type="text/javascript">
+	function getTrip() {
+
+
+
+	}
+</script>
+
+
+
+</script>
+</head>
+<body>
+
+
+
+	<button onclick="getTrip()">Show trip</button>
+	<div id="map-canvas"></div>
+
+
+</body>
+
+
+
+
+
+
+</body>
+</html>

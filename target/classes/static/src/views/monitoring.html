@@ -1,0 +1,26 @@
+<style>
+	#map{
+		width:100%;
+		height: 450px;
+	}
+</style>
+
+
+<div class="row" ng-init='listenToEventSource()'>
+
+	<div class="col-sm-7"  >
+		<div id="map" ng-init='initalizeMap()'></div>
+	</div>
+
+
+	<div class="col-sm-5">
+		<h3>Online vehicles</h3>
+		<div id="cars">
+			<div class="car" ng-repeat="car in cars">
+				# {{car.id}} - {{car.plate}} <br>
+				{{car.driver}}
+			</div>
+		</div>
+	</div>
+	
+</div>

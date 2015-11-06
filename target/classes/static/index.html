@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='app'>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+	<title>AppTitle</title>
+
+	
+	<!-- Bootstrap -->
+	<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="lib/angular-bootstrap-lightbox/angular-bootstrap-lightbox.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+
+	<!-- <link rel="stylesheet" href="lib/syntax-highlighter/codemirror.css"> -->
+
+
+</head>
+<body>
+
+	<div class="container">
+		<div ng-include src="'src/views/_header.html'"></div>
+
+		<div ui-view></div>
+		
+		<div ng-include src="'src/views/_footer.html'"></div>
+	</div>
+
+
+	<script src="lib/angular.min.js"></script>
+	<script src="lib/angular-ui-router.min.js"></script>
+	<script src="lib/ui-bootstrap-tpls-0.12.0.min.js"></script>
+
+	<script src='//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=drawing,geometry'></script>
+	<script src="lib/animated-marker-move.js"></script>
+	<script src="lib/marker-label.js"></script>
+	
+	<script src="lib/ng-storage/ngStorage.min.js"></script>
+	
+	<script src="lib/angular-bootstrap-lightbox/angular-bootstrap-lightbox.min.js"></script>
+
+	<script src="src/app.js"></script>
+	<script src="src/AppCtrl.js"></script>
+	
+
+
+</body>
+</html>
